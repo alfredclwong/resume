@@ -1,0 +1,201 @@
+\documentclass[letterpaper, 10pt]{article}
+
+\usepackage[top=0.4in, bottom=0.4in, left=0.5in, right=0.5in]{geometry}
+\usepackage{multirow, multicol}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newlist{compact}{itemize}{1}
+\setlist[compact]{label=$\bullet$, nolistsep}
+\usepackage{linegoal}
+\usepackage[table]{xcolor}
+\usepackage[normalem]{ulem}
+
+\pagenumbering{gobble}
+
+%Badminton, Table Tennis, Badminton, Climbing, Boxing, Lacrosse, Basketball, Weightlifting, Running, Tennis, Camping/Hiking, Violin, Piano, Guitar, 
+
+\begin{document}
+
+\noindent
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+	\multirow{1}{*}{\bfseries\Huge Alfred Wong}
+	& Trinity College, Cambridge, CB2 1TQ\\
+	& \href{mailto:alfred.cl.wong@gmail.com}{alfred.cl.wong@gmail.com}\\
+	& +44 (0)7516 069692
+\end{tabular*}
+
+\centering
+
+%\vspace{-0.5\baselineskip}
+
+%\section*{\sout{\hfill} Education \sout{\hfill}}
+\section*{Education}
+\begin{tabularx}{\linewidth}{>{\raggedleft}p{2.2cm}|p{1.2cm} p{4.6cm} p{1.2cm} X}
+	2016 - 2020	& \multicolumn{3}{l}{\textbf{Trinity College, University of Cambridge}} & \hfill \textbf{BA(hons) MEng}\\
+%				& \multicolumn{4}{l}{Part I Mathematics \& Part II Engineering (1st, 74\%)}
+				& Part I & Mathematics
+				& Part II & Engineering (1st)\\
+				& \multicolumn{4}{m{16cm}}{\small\textit{Relevant courses: Linear Algebra, Markov Chains, Numerical Analysis, Optimisation, Statistical Signal Processing, Probabilistic Machine Learning, Computational Neuroscience, Deep Learning \& Structured Data}\vspace{.5\baselineskip}}\\
+	2009 - 2016 & \multicolumn{3}{l}{\textbf{Reading School}} & \\%\hfill \textbf{A Level}\\
+				& STEP & \multicolumn{3}{l}{STEP II (S), STEP III (1), for admission into the Cambridge Mathematical Tripos}\\
+				& A Level & \multicolumn{3}{l}{3 A*s (Mathematics, Further Mathematics, Physics), 2 As (Chemistry, History)}\\
+				& ACT & \multicolumn{3}{l}{Composite 35/36 (English 34, Mathematics 35, Reading 35, Science 36)}\\%, English/Writing 31}\\
+				& GCSE & \multicolumn{3}{l}{11 A*s, 2 As (inc. FSMQ Additional Mathematics)}
+\end{tabularx}
+
+%\vspace{-0.5\baselineskip}
+
+%\section*{\sout{\hfill} Experience \sout{\hfill}}
+\section*{Experience}
+\begin{tabularx}{\linewidth}{>{\raggedleft}p{2.2cm}|X}
+Summer 2019 & \textbf{Goldman Sachs, London \hfill Summer Analyst }\\
+10 weeks & Developed a full software stack for flow vis and analysis of a distributed transaction processing system\\
+\textit{Corporate} &
+\vspace{-.5\baselineskip}
+\begin{compact}
+	\item Proposed and deployed a stack consisting of Java/Spring components with a JavaScript/React UI
+	\item Engaged in various networking activities, collaborating with MDs and global team members
+	\item Reached out to the Eqs Structured Products Strat Desk and worked on various side projects
+	\vspace{-.5\baselineskip}
+\end{compact}\\
+Summer 2018 & \textbf{PlayFusion, Cambridge \hfill Intern Developer}\\
+3 months & Theorised a neural network based AI capable of teaching itself to play a newly developed DCCG\\
+\textit{Research} &
+\vspace{-.5\baselineskip}
+\begin{compact}
+	\item Researched and adapted algorithms based on DeepMind's AlphaGo Zero (Nature, Oct 2017)
+	\item Designed a bespoke distributed computing infrastructure using TCP/IP/Python on AWS EC2
+	\item Implemented a basic two-headed neural network to drive self-learning using Keras/Tensorflow
+	%\item Worked within a well-established and rapidly developing code base using GitLab
+	%\item Documented findings in a journal-style report (available on request, with approval to distribute)
+	\vspace{-.5\baselineskip}
+\end{compact}\\
+Summer 2017 & \textbf{WaterScope, Cambridge \hfill Contractor}\\
+2 months & Worked on improving a 3D-printed water-testing microscope prototype for use in developing countries\\
+\textit{Startup} &
+\vspace{-.5\baselineskip}
+\begin{compact}
+	\item Modelled and 3D-printed a screw drive actuator to connect existing mechanisms to a servo motor
+	%\item Assembled an integrated control system consisting of a Raspberry Pi, Pi Camera and Arduino
+	\item Improvised a hybrid golden section/exhaustive search algorithm to suit the target application
+    \item Started a spin-off image processing project (CFU Tracker for same-day water testing)
+	%\item Optimised execution time using multiprocessing in Python
+	%\item Worked independently with limited resources: no lab access, no live sample slides, no supervision
+	\vspace{-\baselineskip}
+\end{compact}
+\end{tabularx}
+
+%\vspace{-0.5\baselineskip}
+
+%{\centering\section*{\sout{\hfil} Projects \sout{\hfil}}}
+\section*{Projects}
+\begin{tabularx}{\linewidth}{>{\raggedleft}p{2.2cm}|X X}
+2017 - present & \multicolumn{2}{p{\linegoal}}{
+	\vspace{-2.9mm}\textbf{CFU Tracker for same-day water testing in developing countries}
+	\begin{compact}
+%		\item Self-started spin-off project stemming from summer internship with WaterScope (Summer 2017)
+		\item Combining traditional CV techniques with time-series analysis and machine learning
+		\item Multidisciplinary collaboration involving microbiology, engineering and a field trip to New Delhi
+		\vspace{-.5\baselineskip}
+	\end{compact}
+}\\
+2018 - 2019 & \multicolumn{2}{l}{\textbf{Engineering Tripos Short Reports and Full Technical Reports}}\\&
+\begin{compact}
+	\vspace{-.5\baselineskip}
+	\item The Shottky Barrier Diode
+	\item Gyroscopic Phenomena
+	\item Evaluating Drug Discovery
+	\vspace{-1.5\baselineskip}
+\end{compact}&
+\begin{compact}
+	\vspace{-.5\baselineskip}
+	\item Bayesian Logistic Regression
+	\item Coding in the Visual Cortex
+	\item Medical Imaging and 3D Computer Graphics
+	\vspace{-1.5\baselineskip}
+\end{compact}\\
+2016 - 2018 & \multicolumn{2}{l}{\textbf{Mathematical Tripos Computational Projects (CATAM)}}\\&
+\begin{compact}
+\vspace{-.5\baselineskip}
+%	\item Google PageRank Algorithm
+\item Public Key Cryptography
+\item Ordinary Differential Equations
+\vspace{-.5\baselineskip}
+\end{compact}&
+\begin{compact}
+\vspace{-.5\baselineskip}
+\item The Restricted Three-Body Problem
+\item Golden Section Search% for the Mode of a Function
+\vspace{-.5\baselineskip}
+\end{compact}\\
+2015 - 2016 & \multicolumn{2}{p{\linegoal}}{
+	\vspace{-2.9mm}\textbf{Quadcopter Control Theory}
+	\begin{compact}
+	\item Built a custom rig using a Mecano set, borrowed quadcopter parts and an I2C accel/gyro unit
+	\item Implemented Arduino-based PID control using IMU sensor data and investigated parameter settings
+	\vspace{-2\baselineskip}
+	\end{compact}
+}\\
+%2013 - 2014 & \multicolumn{2}{p{\linegoal}}{
+%	\vspace{-2.9mm}\textbf{Audio System}
+%	\begin{compact}
+%	\item Designed and combined a series of analogue filters using 741 op-amps to create an equaliser
+%	\item Used power transistors and heat sinks to make an amplifier
+%	\item Diagnosed the performance of the system using function generators, oscilloscopes and multimeters\vspace{-\baselineskip}
+%	\end{compact}
+%}
+\end{tabularx}
+
+%\vspace{-0.5\baselineskip}
+
+%\section*{\sout{\hfill} Skills \sout{\hfill}}
+%\section*{Skills}
+%\vspace{-\baselineskip}
+%\begin{multicols}{2}
+%\begin{itemize}
+%	\item \textbf{Programming Languages}\\
+%	{Python, C++, C$\#$, MATLAB, Java, Bash}
+%	\vspace{-0.5\baselineskip}
+%	\item \textbf{Computer Vision}\\
+%	{OpenCV, focus measure, morphological operations, colony counting, handwriting recognition}
+%	\vspace{-0.5\baselineskip}
+%	\item \textbf{Rapid Prototyping}\\
+%	{Raspberry Pi, Pi Camera, Arduino, $I^2C$/Serial interfacing, sensor chips, servo motors, ICs, soldering}
+%	\vspace{-\baselineskip}
+%	\vfill\null\columnbreak
+%	\item \textbf{Machine Learning}\\
+%	{11-week online course by Andrew Ng (Stanford), practical experience with deep neural networks, two-headed networks, AWS EC2 cloud computing}
+%	\vspace{-0.5\baselineskip}
+%%	\item \textbf{Computer-Aided Design/Manufacturing}\\
+%%	{3D Printing, Fusion360, OpenSCAD, laser cutting}
+%%	\vspace{-0.5\baselineskip}
+%%	\item \textbf{Version Control}\\
+%%	{Git, GitHub/GitLab, SVN}
+%%	\vspace{-\baselineskip}
+%	\item \textbf{UNIX Administration \& Data Networking}\\
+%	Dual-booted Linux/Windows on my personal computers for over a decade, Arch Linux, used TCP/IP for data transmission in a decentralised deep learning network
+%	\vspace{-\baselineskip}
+%\end{itemize}
+%\end{multicols}
+%
+%\vspace{-1.5\baselineskip}
+
+%{\centering\section*{\sout{\hfil} Leadership and Achievements \sout{\hfil}}}
+\section*{Leadership and Achievements}
+\vspace{-\baselineskip}
+\begin{multicols}{2}
+\begin{compact}
+	\item Trinity College Basketball Captain (2018-19)
+	\item First and Third Lower Boats' Captain (2017-18)
+	\item Co-produced, composed and led a musical programme consisting of an orchestra, choir, small groups and soloists for a school competition (2016)
+	\item School Prefect \& House Vice-Captain (2015-16)
+	\vspace{-\baselineskip}
+	\vfill\null\columnbreak
+	\item Sat Round 2 of the British Mathematical Olympiad and attended the Olympiad Initial Training Camp at The Queen's College, Oxford, by invitation (2013-14)
+	\item Competed in the Gibraltar International Junior Chess Festival as part of the English National Chess Junior Squad (2012)
+	\vspace{-\baselineskip}
+\end{compact}
+\end{multicols}
+
+\end{document}
