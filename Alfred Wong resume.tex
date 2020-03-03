@@ -1,6 +1,6 @@
 \documentclass[letterpaper, 10pt]{article}
 
-\usepackage[top=0.4in, bottom=0.4in, left=0.5in, right=0.5in]{geometry}
+\usepackage[top=0.7in, bottom=0.4in, left=0.6in, right=0.6in]{geometry}
 \usepackage{multirow, multicol}
 \usepackage[hidelinks]{hyperref}
 \usepackage{tabularx}
@@ -10,6 +10,8 @@
 \usepackage{linegoal}
 \usepackage[table]{xcolor}
 \usepackage[normalem]{ulem}
+\usepackage{url}
+\urlstyle{same}
 
 \pagenumbering{gobble}
 
@@ -22,7 +24,8 @@
 	\multirow{1}{*}{\bfseries\Huge Alfred Wong}
 	& Trinity College, Cambridge, CB2 1TQ\\
 	& \href{mailto:alfred.cl.wong@gmail.com}{alfred.cl.wong@gmail.com}\\
-	& +44 (0)7516 069692
+	& +44 (0)7516 069692\\
+    & \url{aclw3.user.srcf.net}\\
 \end{tabular*}
 
 \centering
@@ -33,18 +36,22 @@
 \section*{Education}
 \begin{tabularx}{\linewidth}{>{\raggedleft}p{2.2cm}|p{1.2cm} p{4.6cm} p{1.2cm} X}
 	2016 - 2020	& \multicolumn{3}{l}{\textbf{Trinity College, University of Cambridge}} & \hfill \textbf{BA(hons) MEng}\\
-%				& \multicolumn{4}{l}{Part I Mathematics \& Part II Engineering (1st, 74\%)}
 				& Part I & Mathematics (2:1)
-				& Part II & Engineering (1st)\\
+				& Part II & Engineering (1st, on track for Distinction)\\%\vspace{.5\baselineskip}\\
+                & \multicolumn{4}{m{15.5cm}}{\small\textit{Relevant courses: Linear Algebra, Markov Chains, Numerical Analysis, Inference, Statistical Signal Processing, Optimisation, Probabilistic Machine Learning, Deep Learning \& Structured Data, Information Theory}\vspace{.5\baselineskip}}\\
+%                & \multicolumn{4}{m{16cm}}{\small\textit{Relevant courses: Linear Algebra, Markov Chains, Numerical Analysis, Inference, Statistical Signal Processing, Optimisation, Probabilistic Machine Learning, Deep Learning \& Structured Data, Advanced Information Theory, Embedded Systems, Medical Imaging \& 3D Computer Graphics, Quantum Mechanics}\vspace{.5\baselineskip}}\\
+                & GRE & \multicolumn{3}{l}{Verbal 167/170, Quant 170/170, Writing 4.5/6}\\
 %                &&&&\\
-				& \multicolumn{4}{m{16cm}}{\small\textit{Relevant courses: Linear Algebra, Markov Chains, Numerical Analysis, Optimisation, Statistical Signal Processing, Probabilistic Machine Learning, Computational Neuroscience, Deep Learning \& Structured Data}\vspace{.5\baselineskip}}\\
-                & GRE & \multicolumn{3}{l}{Verbal Reasoning 167/170, Quantitative Reasoning 170/170, Analytical Writing 4.5/6}\\%\rule{0pt}{.5\baselineskip}
 	2009 - 2016 & \multicolumn{3}{l}{\textbf{Reading School}} & \\%\hfill \textbf{A Level}\\
-				& STEP & \multicolumn{3}{l}{STEP II (S), STEP III (1), for admission into the Cambridge Mathematical Tripos}\\
+				& STEP & STEP II (S), STEP III (1)%, for admission into the Cambridge Mathematical Tripos}\\
 %				& A Level & \multicolumn{3}{l}{3 A*s (Maths 600/600, F Maths 596/600, Physics 575/600), 2 As (Chemistry, History)}\\
-                & A Level & \multicolumn{3}{l}{3A* (Maths 100\%, F Maths 99\%, Physics 96\%), 2A (Chemistry 88\%, History 98\% AS)}\\
-				& ACT & \multicolumn{3}{l}{Composite 35/36 (English 34, Maths 35, Reading 35, Science 36), English/Writing 31}\\
-                & GCSE & \multicolumn{3}{l}{11A*, 2A (inc. FSMQ Additional Mathematics)}\\
+                & A Level & 3A* (Maths 100\%, F Maths 99\%, Physics 96\%)\\
+                & ACT &
+                Composite 35/36
+                && 2A\,\,\, (Chemistry 88\%, History 98\% AS)\\
+                %(English 34, Maths 35, Reading 35, Science 36), English/Writing 31}\\
+                && English/Writing 31/36
+                & GCSE & 11A*, 2A%(inc. FSMQ Additional Mathematics)}\\
 \end{tabularx}
 
 %\vspace{-0.5\baselineskip}
@@ -53,36 +60,37 @@
 \section*{Experience}
 \begin{tabularx}{\linewidth}{>{\raggedleft}p{2.2cm}|X}
 Summer 2019 & \textbf{Goldman Sachs, London \hfill Summer Analyst}\\
-10 weeks & Developed a full software stack for flow vis and analysis of a distributed transaction processing system\\
-\textit{Corporate} &
+3 months & Developed a full software stack for flow vis and analysis of a distributed transaction processing system\\
+\textit{\\Tech\\Finance} &
 \vspace{-.5\baselineskip}
 \begin{compact}
-	\item Proposed and deployed a Java/Spring backend in tandem with a JavaScript/React frontend/UI
-	\item Engaged in extensive networking activities, collaborating with MDs and global team members
-	\item Reached out to the Eqs Structured Products Strat Desk and worked on small quant projects
-	\vspace{-.5\baselineskip}
+	\item Used Java/Spring with a time-series SQL-like DB to collect info from data sources (JMX, DB2)
+    \item Served a JS/React graphical frontend displaying time-series analyses and routing flow indicators
+%	\item Engaged in extensive networking activities, collaborating with MDs and global team members
+	\item Reached out to the Structured Products Strat Desk, worked on small quant projects on the side
+	\vspace{-1.5\baselineskip}
 \end{compact}\\
-Summer 2018 & \textbf{PlayFusion, Cambridge \hfill Intern Developer}\\
-3 months & Attempted to make a neural network based AI capable of teaching itself to play a newly developed DCCG\\
-\textit{Research} &
+Summer 2018 & \textbf{PlayFusion, Cambridge \hfill Artificial Intelligence}\\
+3 months & Researched and designed a custom neural network based AI for use in a newly developed video game\\
+\textit{\\ML/AI Research} &
 \vspace{-.5\baselineskip}
 \begin{compact}
-	\item Researched and adapted algorithms/structures based on DeepMind's AlphaGo Zero (Nature 2017)
-	\item Designed a bespoke distributed computing infrastructure using TCP/IP/Python on AWS EC2
-	\item Implemented a basic two-headed neural network to drive self-learning using Keras/Tensorflow
+	\item Adapted a concurrent probabilistic tree search algorithm based on AlphaZero, using Unity/C\#
+	\item Built and deployed a distributed self-play computing infrastructure using TCP/IP/Python/AWS
+	\item Employed a basic two-headed neural network to drive self-learning using Keras/Tensorflow
 	%\item Worked within a well-established and rapidly developing code base using GitLab
 	%\item Documented findings in a journal-style report (available on request, with approval to distribute)
 	\vspace{-.5\baselineskip}
 \end{compact}\\
-Summer 2017 & \textbf{WaterScope, Cambridge \hfill Contractor}\\
+Summer 2017 & \textbf{WaterScope, Cambridge \hfill Computer Vision}\\
 2 months & Worked on improving a 3D-printed water-testing microscope prototype for use in developing countries\\
-\textit{Startup} &
+\textit{\\Non-profit Startup} &
 \vspace{-.5\baselineskip}
 \begin{compact}
 	\item Modelled and 3D-printed a screw drive actuator to connect existing mechanisms to a servo motor
 	%\item Assembled an integrated control system consisting of a Raspberry Pi, Pi Camera and Arduino
-	\item Improvised a hybrid golden section/exhaustive search algorithm to suit the target application
-    \item Started a spin-off image processing project (CFU Tracker for same-day water testing)
+	\item Parallelised edge detection convolutions within a search algorithm to optimise performance
+    \item Started and consulted on a spin-off image processing project (CFU tracker for water testing)
 	%\item Optimised execution time using multiprocessing in Python
 	%\item Worked independently with limited resources: no lab access, no live sample slides, no supervision
 	\vspace{-\baselineskip}
@@ -92,52 +100,59 @@ Summer 2017 & \textbf{WaterScope, Cambridge \hfill Contractor}\\
 %\vspace{-0.5\baselineskip}
 
 %{\centering\section*{\sout{\hfil} Projects \sout{\hfil}}}
-\section*{Projects}
-\begin{tabularx}{\linewidth}{>{\raggedleft}p{2.2cm}|X X}
-2019 - present & \multicolumn{2}{p{\linegoal}}{
+\section*{Relevant Projects}
+\begin{tabularx}{\linewidth}{>{\raggedleft}p{2.2cm}|p{6.45cm} X}
+2019 - 2020 & \multicolumn{2}{p{\linegoal}}{
     \vspace{-2.9mm}\textbf{Feature selection for individualised treatment effects}
     \begin{compact}
-        \item Masters Project on medical machine learning, supervised by Prof. Mihaela van der Schaar
-        \item Worked on GANs, actor-critic RL, representation learning, causal inference
-        \vspace{-.5\baselineskip}
+        \item Medical machine learning, with a focus on individualised healthcare and causal inference
+        \item Worked with GANs, actor-critic RL and representation learning, using Pandas/Keras/Tensorflow
+        \vspace{-1.5\baselineskip}
     \end{compact}
 }\\
-2017 - present & \multicolumn{2}{p{\linegoal}}{
-	\vspace{-2.9mm}\textbf{CFU Tracker for same-day water testing in developing countries}
+%2019 - 2020 & \multicolumn{2}{p{\linegoal}}{
+%\vspace{-2.9mm}\textbf{Embedded Tetris}
+%\begin{compact}
+%    \item Built a Tetris game using limited hardware on the ARM Cortex-M0, coded in C
+%    \vspace{-.5\baselineskip}
+%\end{compact}
+%}\\
+2017 - 2018 & \multicolumn{2}{p{\linegoal}}{
+	\vspace{-2.9mm}\textbf{CFU tracker for same-day water testing in developing countries}
 	\begin{compact}
 %		\item Self-started side project stemming from summer internship with WaterScope (Summer 2017)
-		\item Combining traditional computer vision techniques with time-series analysis and machine learning
+		\item Combined traditional computer vision techniques with time-series analysis and machine learning
 		\item Multidisciplinary collaboration involving microbiology, engineering and a field trip to New Delhi
-		\vspace{-.5\baselineskip}
+		\vspace{-\baselineskip}
 	\end{compact}
 }\\
-2016 - 2020 & \multicolumn{2}{l}{\textbf{Engineering Tripos Reports \& Mathematical Tripos CATAM}}\\&
-\begin{compact}
-	\vspace{-.5\baselineskip}
-    \item Gaussian Processes
-    \item Probabilistic Ranking
-%	\item The Shottky Barrier Diode
-%	\item Gyroscopic Phenomena
-%	\item Evaluating Drug Discovery
-%   \item Google PageRank Algorithm
-    \item Public Key Cryptography
-    \item Ordinary Differential Equations
-	\vspace{-\baselineskip}
-\end{compact}&
-\begin{compact}
-	\vspace{-.5\baselineskip}
-%    \item Bayesian Logistic Regression
-    \item Latent Dirichlet Allocation
-    \item Coding in the Visual Cortex
-    \item The Restricted Three-Body Problem
-    \item Medical Imaging \& 3D Computer Graphics
-%    \item Golden Section Search% for the Mode of a Function
-	\vspace{-\baselineskip}
-\end{compact}\\
+%2016 - 2020 & \multicolumn{2}{l}{\textbf{Engineering Tripos Reports \& Mathematical Tripos CATAM}}\\&
+%\begin{compact}
+%	\vspace{-.5\baselineskip}
+%    \item Gaussian Processes
+%    \item Probabilistic Ranking
+%%	\item The Shottky Barrier Diode
+%%	\item Gyroscopic Phenomena
+%%	\item Evaluating Drug Discovery
+%%   \item Google PageRank Algorithm
+%    \item Public Key Cryptography
+%    \item Ordinary Differential Equations
+%	\vspace{-\baselineskip}
+%\end{compact}&
+%\begin{compact}
+%	\vspace{-.5\baselineskip}
+%%    \item Bayesian Logistic Regression
+%    \item Latent Dirichlet Allocation
+%    \item Coding in the Visual Cortex
+%    \item The Restricted Three-Body Problem
+%    \item Medical Imaging \& 3D Computer Graphics
+%%    \item Golden Section Search% for the Mode of a Function
+%	\vspace{-\baselineskip}
+%\end{compact}\\
 %2015 - 2016 & \multicolumn{2}{p{\linegoal}}{
 %	\vspace{-2.9mm}\textbf{Quadcopter Control Theory}
 %	\begin{compact}
-%	\item Built a custom rig using a Mecano set, borrowed quadcopter parts and an I2C accel/gyro unit
+%	\item Built a custom rig using a Mecano set, borrowed quadcopter parts and an I2C accel/gyro chip
 %	\item Implemented PID control using IMU sensor data and investigated changes in parameter settings
 %	\vspace{-\baselineskip}
 %	\end{compact}
@@ -191,15 +206,17 @@ Summer 2017 & \textbf{WaterScope, Cambridge \hfill Contractor}\\
 \vspace{-\baselineskip}
 \begin{multicols}{2}
 \begin{compact}
-	\item Trinity College Basketball Captain (2018-19)
-	\item First and Third Lower Boats' Captain (2017-18)
+	\item Trinity College Basketball Captain, led 3 sessions a week, promoted to Division 1 by end of year% (2018-19)
+	\item First and Third Lower Boats' Captain, coached 100+ novices as a team of 7, fastest NW1 \& NW3% (2017-18)
 %    \item Climbed Mt Fuji! (2017)
-	\item Co-produced, composed and led a musical programme consisting of an orchestra, choir, small groups and soloists for a school competition (2016)
-	\item School Prefect \& House Vice-Captain (2015-16)
-	\vspace{-\baselineskip}
-	\vfill\null\columnbreak
-	\item Sat Round 2 of the British Mathematical Olympiad and attended the Olympiad Initial Training Camp at The Queen's College, Oxford, by invitation (2013-14)
-	\item Competed in the Gibraltar International Junior Chess Festival as part of the English National Chess Junior Squad (2012)
+    \item 1st Men's Novice VIII, 9/9 race wins, fastest novice crew across 2700m for the first time in 33 years% (2016)
+	\item Composed for and led an orchestra, choir, small groups and soloists for a school competition, as a group of 3% (2016)
+    \vspace{-\baselineskip}
+    \vfill\null\columnbreak
+    \item School Symphony Orchestra, played as Concertmaster for Dvorak 9, Violin 2 leader for Beethoven 5% (2015-2016)
+    \item School Prefect \& House Vice-Captain, organised and participated in sports teams across all year groups% (2015-16)
+	\item Sat Round 2 of the British Mathematical Olympiad, invited to an Olympiad Training Camp at Oxford% (2014)
+	\item Represented the English National Junior Chess Squad on an international level in Gibraltar % (2012)
 	\vspace{-\baselineskip}
 \end{compact}
 \end{multicols}
