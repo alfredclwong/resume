@@ -1,6 +1,7 @@
 \documentclass[letterpaper, 10pt]{article}
+\usepackage{fontawesome}
 
-\usepackage[top=0.7in, bottom=0.4in, left=0.6in, right=0.6in]{geometry}
+\usepackage[top=0.5in, bottom=0.4in, left=0.6in, right=0.6in]{geometry}
 \usepackage{multirow, multicol}
 \usepackage[hidelinks]{hyperref}
 \usepackage{tabularx}
@@ -13,6 +14,9 @@
 \usepackage{url}
 \urlstyle{same}
 
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
 \pagenumbering{gobble}
 
 %Badminton, Table Tennis, Badminton, Climbing, Boxing, Lacrosse, Basketball, Weightlifting, Running, Tennis, Camping/Hiking, Violin, Piano, Guitar, 
@@ -20,23 +24,27 @@
 \begin{document}
 
 \noindent
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
-	\multirow{1}{*}{\bfseries\Huge Alfred Wong}
-	& 12 Searles Road, London, SE1 4YU\\
-	& \href{mailto:alfred.cl.wong@gmail.com}{alfred.cl.wong@gmail.com}\\
-	& +44 (0)7516 069692\\
-    % & \url{aclw3.user.srcf.net}\\
-\end{tabular*}
+\begin{tabularx}{\textwidth}{@{\extracolsep{\fill}} X p{2.6cm} p{4.4cm}}
+	\multirow{2}{*}{\bfseries\Huge Alfred Wong}
+	& \faPhone\ 07516 069 692
+	& \,\faMapMarker\ 12 Searles Road, London\\
+	& \href{https://github.com/alfredclwong}{\faGithub\ alfredclwong}
+	& \href{mailto:alfred.cl.wong@gmail.com}{{\small\faEnvelope}\ alfred.cl.wong@gmail.com}\\ \hline
+% & \url{aclw3.user.srcf.net}\\
+\end{tabularx}
 
-\centering
+% \vspace{\baselineskip}\noindent
+% \textit{Quantitative graduate specialised in probability, statistics and machine learning. Software skills: Python, C/C++, Java, JavaScript, OCaml, AWS, RDBMS, etc. Studied Mech/Elec/Info/Bio Engineering, actively interested in topics ranging from neuroscience and quantum to asset pricing and functional programming. I enjoy novel, cross-disciplinary work.}
 
-% \vspace{-\baselineskip}
+{\centering
+
+% \vspace{-.5\baselineskip}
 
 %\section*{\sout{\hfill} Education \sout{\hfill}}
 \section*{Education}
-\begin{tabularx}{\linewidth}{>{\raggedleft}p{2.2cm}|p{1.2cm} p{4.8cm} p{1.2cm} X}
-	2016 - 2020	& \multicolumn{3}{l}{\textbf{Trinity College, University of Cambridge}} & \hfill \textbf{1st Class, BA MEng}\\
-				& \multicolumn{4}{m{15.5cm}}{\textit{Part I Mathematics - Part II Engineering}
+\begin{tabularx}{\linewidth}{>{\raggedleft}p{2.1cm}|p{1.2cm} p{4.8cm} p{1.2cm} X}
+	2016 - 2020	& \multicolumn{3}{l}{\textbf{Trinity College, University of Cambridge}} & \hfill \textbf{BA MEng}\\
+				& \multicolumn{4}{m{15.5cm}}{{Part I Mathematics - Part II Engineering \hfill (1)}
 				\vspace{.5\baselineskip}}\\
 				% }\\& \multicolumn{4}{m{15.5cm}}{\small\textit{Relevant courses: Linear Algebra, Markov Chains, Numerical Analysis, Statistical Signal Processing, Probabilistic Machine Learning, Deep Learning \& Structured Data, Adv. Info. Theory, Computational Neuroscience}\vspace{.5\baselineskip}}\\
                	% & \multicolumn{4}{m{16cm}}{\small\textit{Relevant courses: Linear Algebra, Markov Chains, Numerical Analysis, Inference, Statistical Signal Processing, Optimisation, Probabilistic Machine Learning, Deep Learning \& Structured Data, Advanced Information Theory, Embedded Systems, Medical Imaging \& 3D Computer Graphics, Quantum Mechanics}\vspace{.5\baselineskip}}\\
@@ -52,64 +60,34 @@
 
 %\section*{\sout{\hfill} Experience \sout{\hfill}}
 \section*{Experience}
-\begin{tabularx}{\linewidth}{>{\raggedleft}p{2.2cm}|X}
-Summer 2019			& \textbf{Goldman Sachs \hfill London}\\
-\textit{Finance}	& \textit{Developed a full stack system and contributed to some quant analyst work}\\
+\begin{tabularx}{\linewidth}{>{\raggedleft}p{2.1cm}|X}
+Summer 2019			& \textbf{Goldman Sachs}\\
+\textit{Finance}	& \textit{Developed a full stack system and contributed to some quant projects}\\
 					& \vspace{-.5\baselineskip}\begin{compact}
-						\item Used Java/Spring with a time-series SQL-like DB to collect info from data sources (JMX, DB2)
-						\item Served a JS/React graphical frontend displaying time-series analyses and routing flow indicators
-						\item Worked on various quant projects on the side for the Equities Structured Products Strat Desk
-						\vspace{-.5\baselineskip}
+						\item Java/Spring: queried data from Db2/JMX and deployed an SQL-like database to prod for storage
+						\item JS/React: built a graphical frontend displaying time-series analyses and routing flow indicators
+						\item Slang: wrote various small scripts (reports/models) for the Eqs Structured Products Strat Desk
+						\vspace{-1.5\baselineskip}
 					\end{compact}\\
-Summer 2018	& \textbf{PlayFusion \hfill Cambridge}\\
+Summer 2018	& \textbf{PlayFusion}\\
 \textit{Research}	& \textit{Implemented an asynchronous, probabilistic tree search based AI with a distributed self-play setup}\\
 					& \vspace{-.5\baselineskip}\begin{compact}
-						\item Adapted AlphaZero's APV-MCTS method, applying concurrency-oriented tweaks (Unity/C\#)
-						\item Built and deployed an arbitrarily scaling self-play infrastructure on AWS with TCP/IP (Python)
-						\item Ran experiments with a basic two-headed neural network as a placeholder (Keras/Tensorflow)
+						\item Unity/C\#: optimised and established communication channels within existing game logic and coded an adaptation of AlphaZero's APV-MCTS method, applying concurrency-oriented tweaks
+						\item Python: deployed a scaling self-play/training infrastructure on AWS using TCP/IP networking
+						\item Keras/Tensorflow: ran experiments with a basic two-headed neural network as a placeholder
 						\vspace{-.5\baselineskip}
 					\end{compact}\\
-Summer 2017	& \textbf{WaterScope \hfill Cambridge}\\
-\textit{Non-profit}	& \textit{Worked on a 3D-printed water-testing microscope for use in developing countries}\\
+Summer 2017	& \textbf{WaterScope}\\
+\textit{Non-profit}	& \textit{Automated processes within a 3D-printed water-testing microscope for use in developing countries}\\
 					& \vspace{-.5\baselineskip}\begin{compact}
-						\item Modelled and printed various 3D components to work in conjuction with an RPi and Arduino
+						\item Modelled and printed various 3D components to operate in conjuction with an RPi and Arduino
 						\item Parallelised image convolutions within a golden-section search to optimise autofocus performance
-						\vspace{-2\baselineskip}
+						\item Self-started a spin-off project, using HSV spectrum/time-series analyses for CFU segmentation
+						\vspace{-\baselineskip}
 					\end{compact}
 \end{tabularx}
 
 %\vspace{-0.5\baselineskip}
-
-%{\centering\section*{\sout{\hfil} Projects \sout{\hfil}}}
-\section*{Projects}
-\begin{tabularx}{\linewidth}{>{\raggedleft}p{2.2cm}|p{6.45cm} X}
-2019 - 2020 & \multicolumn{2}{p{\linegoal}}{
-    \vspace{-2.9mm}\textbf{Balanced Representation Learning and Feature Disentanglement for Medical ML}
-    \begin{compact}
-        \item Masters dissertation with a focus on individualised healthcare and causal graph inference
-        \item Tackling the problem of performing feature selection with consideration for confounding biases
-        \item Worked with GANs, actor-critic RL and representation learning, using Pandas/Keras in Python
-        \vspace{-.5\baselineskip}
-    \end{compact}
-}\\
-2019 - 2020 & \multicolumn{2}{p{\linegoal}}{
-\vspace{-2.9mm}\textbf{Low-level, High-framerate Tetris Implementation on a KL03 ARM Cortex-M0}
-\begin{compact}
-   \item Coded in C, driving a $96\times64\times16\mathrm{bit}$ colour display at 60 FPS (720KB/s) with 2KB SRAM
-   \vspace{-.5\baselineskip}
-\end{compact}
-}\\
-2017 - 2018 & \multicolumn{2}{p{\linegoal}}{
-	\vspace{-2.9mm}\textbf{CFU Tracker for Automated Intra-day Water Testing}
-	\begin{compact}
-%		\item Self-started side project stemming from summer internship with WaterScope (Summer 2017)
-		\item Multidisciplinary collab with WaterScope involving microbiology, engineering and a field trip
-		\item Used HSV spectrum analysis, computer vision and time-series techniques to improve segmentation
-		% \item Consulted on a subsequent intern project using U-Nets to approach the task
-		\vspace{-2\baselineskip}
-	\end{compact}
-}\\
-\end{tabularx}
 
 \section*{Leadership and Achievements}
 \vspace{-\baselineskip}
@@ -130,5 +108,26 @@ Summer 2017	& \textbf{WaterScope \hfill Cambridge}\\
 	\vspace{-\baselineskip}
 \end{itemize}
 \end{multicols}
+
+\section*{Projects and Skills}
+}
+\noindent
+\begin{changemargin}{.1cm}{0cm}
+\textbf{Feature Disentanglement and Balanced Representation Learning for Medical Machine Learning} \hfill \href{https://github.com/alfredclwong/ite-feature-selection}{\faGithub}
+    \begin{compact}
+        \vspace{-.2\baselineskip}
+        \item Masters diss focused on individualised healthcare and causal graph (counterfactual) inference
+        \item Performed feature selection for treatment effects with consideration for confounding biases
+        \item Involved GANs, actor-critic RL and representation learning, using Pandas/Keras in Python
+    \end{compact}
+\textbf{Tetris Implementations}
+\begin{compact}
+	\vspace{-.2\baselineskip}
+   \item C: drove a $96\times64\times16\mathrm{bit}$ colour display at 60fps with a KL03 ARM Cortex-M0 (2kB SRAM) \hfill \href{https://github.com/alfredclwong/4b25-tetris}{\faGithub}
+   \item OCaml: learning functional programming with the goal of developing a self-taught PvP AI \hfill \href{https://github.com/alfredclwong/tetris-ocaml}{\faGithub}
+\end{compact}
+\vspace{\baselineskip}
+Python $\cdot$ C/C++ $\cdot$ Java $\cdot$ JavaScript $\cdot$ React $\cdot$ HTML/CSS $\cdot$ OCaml $\cdot$ Git $\cdot$ CI/CD $\cdot$ Agile $\cdot$ Linux $\cdot$ Bash/Shell $\cdot$ \LaTeX $\cdot$ Basketball $\cdot$ Climbing $\cdot$ Rowing $\cdot$ Table Tennis  $\cdot$ Chess $\cdot$ Piano $\cdot$ Violin $\cdot$ Guitar $\cdot$ Black-Scholes $\cdot$ Quantum Mechanics $\cdot$ AWS $\cdot$ SQL $\cdot$ Keras/Tensorflow $\cdot$ Machine Learning $\cdot$ Computer Vision $\cdot$ Measure Theory $\cdot$ Computational Neuroscience
+\end{changemargin}
 
 \end{document}
