@@ -1,133 +1,92 @@
 \documentclass[letterpaper, 10pt]{article}
+\usepackage[top=0.7in, bottom=0.5in, left=0.9in, right=0.9in]{geometry}
 \usepackage{fontawesome}
 
-\usepackage[top=0.5in, bottom=0.4in, left=0.6in, right=0.6in]{geometry}
-\usepackage{multirow, multicol}
-\usepackage[hidelinks]{hyperref}
-\usepackage{tabularx}
-\usepackage{enumitem}
-\newlist{compact}{itemize}{1}
-\setlist[compact]{label=$\bullet$, nolistsep}
-\usepackage{linegoal}
-\usepackage[table]{xcolor}
-\usepackage[normalem]{ulem}
 \usepackage{url}
 \urlstyle{same}
-
-\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
-\let\endchangemargin=\endlist 
-
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\newlist{compact}{itemize}{1}
+\setlist[compact]{label=$\bullet$, nolistsep, leftmargin=5mm}
+\usepackage{titlesec}
+\titleformat{\section}[block]{\large\bfseries\filcenter}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+\setlength{\parindent}{0pt}
 \pagenumbering{gobble}
 
-%Badminton, Table Tennis, Badminton, Climbing, Boxing, Lacrosse, Basketball, Weightlifting, Running, Tennis, Camping/Hiking, Violin, Piano, Guitar, 
-
 \begin{document}
+\begin{center}
+	{\bfseries\huge Alfred Wong}\\
+	\vspace{-.5\baselineskip}\rule{\textwidth}{0.8pt}
+	\faMapMarker\ 12 Searles Road, London
+	\quad
+	\href{mailto:alfred.cl.wong@gmail.com}{{\small\faEnvelope}\ alfred.cl.wong@gmail.com}
+	\quad
+	\href{https://github.com/alfredclwong}{\faGithub\ alfredclwong}
+	\quad
+	\faPhone\ 07516 069 692
+\end{center}
 
-\noindent
-\begin{tabularx}{\textwidth}{@{\extracolsep{\fill}} X p{2.6cm} p{4.4cm}}
-	\multirow{2}{*}{\bfseries\Huge Alfred Wong}
-	& \faPhone\ 07516 069 692
-	& \,\faMapMarker\ 12 Searles Road, London\\
-	& \href{https://github.com/alfredclwong}{\faGithub\ alfredclwong}
-	& \href{mailto:alfred.cl.wong@gmail.com}{{\small\faEnvelope}\ alfred.cl.wong@gmail.com}\\ \hline
-% & \url{aclw3.user.srcf.net}\\
-\end{tabularx}
-
-% \vspace{\baselineskip}\noindent
-% \textit{Quantitative graduate specialised in probability, statistics and machine learning. Software skills: Python, C/C++, Java, JavaScript, OCaml, AWS, RDBMS, etc. Studied Mech/Elec/Info/Bio Engineering, actively interested in topics ranging from neuroscience and quantum to asset pricing and functional programming. I enjoy novel, cross-disciplinary work.}
-
-{\centering
-
-% \vspace{-.5\baselineskip}
-
-%\section*{\sout{\hfill} Education \sout{\hfill}}
 \section*{Education}
-\begin{tabularx}{\linewidth}{>{\raggedleft}p{2.1cm}|p{1.2cm} p{4.8cm} p{1.2cm} X}
-	2016 - 2020	& \multicolumn{3}{l}{\textbf{Trinity College, University of Cambridge}} & \hfill \textbf{BA MEng}\\
-				& \multicolumn{4}{m{15.5cm}}{{Part I Mathematics - Part II Engineering \hfill (1)}
-				\vspace{.5\baselineskip}}\\
-				% }\\& \multicolumn{4}{m{15.5cm}}{\small\textit{Relevant courses: Linear Algebra, Markov Chains, Numerical Analysis, Statistical Signal Processing, Probabilistic Machine Learning, Deep Learning \& Structured Data, Adv. Info. Theory, Computational Neuroscience}\vspace{.5\baselineskip}}\\
-               	% & \multicolumn{4}{m{16cm}}{\small\textit{Relevant courses: Linear Algebra, Markov Chains, Numerical Analysis, Inference, Statistical Signal Processing, Optimisation, Probabilistic Machine Learning, Deep Learning \& Structured Data, Advanced Information Theory, Embedded Systems, Medical Imaging \& 3D Computer Graphics, Quantum Mechanics}\vspace{.5\baselineskip}}\\
-               	% &&&&\\
-	2014 - 2020			& \multicolumn{3}{l}{\textbf{Other Qualifications}}\\
-				& STEP & STEP II (S), STEP III (1)
-				& GRE & {Verbal 167/170, Quant 170/170, Writing 4.5/6}\\
-				& A Level & 3A* (F Maths, Maths, Physics) & ACT & Composite 35/36, English/Writing 31/36\\
-				&& 2A\,\,\, (Chemistry, History) & GCSE & 11A*, 2A\\
-\end{tabularx}
+\textbf{University of Cambridge, Trinity College} \hfill BA MEng\\
+Part I Mathematics - Part II Engineering (1st) \hfill 2016 - 2020\vspace{.5\baselineskip}\\
+\textbf{Examinations}\\
+STEP II, III: S, 1 - A Level: 3A*, 2A - GCSE: 11A*, 2A - GRE: 170, 167, 4.5 - ACT: 35
 
-%\vspace{-0.5\baselineskip}
-
-%\section*{\sout{\hfill} Experience \sout{\hfill}}
 \section*{Experience}
-\begin{tabularx}{\linewidth}{>{\raggedleft}p{2.1cm}|X}
-Summer 2019			& \textbf{Goldman Sachs}\\
-\textit{Finance}	& \textit{Developed a full stack system and contributed to some quant projects}\\
-					& \vspace{-.5\baselineskip}\begin{compact}
-						\item Java/Spring: queried data from Db2/JMX and deployed an SQL-like database to prod for storage
-						\item JS/React: built a graphical frontend displaying time-series analyses and routing flow indicators
-						\item Slang: wrote various small scripts (reports/models) for the Eqs Structured Products Strat Desk
-						\vspace{-1.5\baselineskip}
-					\end{compact}\\
-Summer 2018	& \textbf{PlayFusion}\\
-\textit{Research}	& \textit{Implemented an asynchronous, probabilistic tree search based AI with a distributed self-play setup}\\
-					& \vspace{-.5\baselineskip}\begin{compact}
-						\item Unity/C\#: optimised and established communication channels within existing game logic and coded an adaptation of AlphaZero's APV-MCTS method, applying concurrency-oriented tweaks
-						\item Python: deployed a scaling self-play/training infrastructure on AWS using TCP/IP networking
-						\item Keras/Tensorflow: ran experiments with a basic two-headed neural network as a placeholder
-						\vspace{-.5\baselineskip}
-					\end{compact}\\
-Summer 2017	& \textbf{WaterScope}\\
-\textit{Non-profit}	& \textit{Automated processes within a 3D-printed water-testing microscope for use in developing countries}\\
-					& \vspace{-.5\baselineskip}\begin{compact}
-						\item Modelled and printed various 3D components to operate in conjuction with an RPi and Arduino
-						\item Parallelised image convolutions within a golden-section search to optimise autofocus performance
-						\item Self-started a spin-off project, using HSV spectrum/time-series analyses for CFU segmentation
-						\vspace{-\baselineskip}
-					\end{compact}
-\end{tabularx}
-
-%\vspace{-0.5\baselineskip}
+\textbf{Microsoft Research} \hfill Remote\\
+Research Engineer \hfill Dec 20 - present
+\begin{compact}
+	\item Facilitated VR/AR hardware research, leveraging various technologies to accelerate prototype iteration cycles
+	\item Maintained/developed OpticSim.jl, an open-source package for CSG-based optical simulation/optimisation
+\end{compact}
+\vspace{.5\baselineskip}
+\textbf{Goldman Sachs} \hfill London\\
+Summer Analyst \hfill Jun - Aug 19
+\begin{compact}
+	\item Sat with two desks: Client Services; Equities Structured Products Strats
+	\item Implemented a full-stack application to visualise distributed workflows; wrote various reports/models
+\end{compact}
+\vspace{.5\baselineskip}
+\textbf{PlayFusion} \hfill Cambridge\\
+Intern \hfill Jul - Sep 18
+\begin{compact}
+	\item Studied the viability of applying an ML-based AI to a newly released video game (trained from tabula rasa)
+	\item Wrote an adaptation of AlphaZero's asynchronous policy-value Monte Carlo tree search algorithm
+	\item Architected/deployed a scaling distributed cluster (EC2, TCP/IP) for training the policy-value network
+\end{compact}
+\vspace{.5\baselineskip}
+\textbf{WaterScope} \hfill Cambridge\\
+Intern \hfill Jul - Sep 17
+\begin{compact}
+	\item Designed augmentations for a 3D-printed microscope to enable smart features such as autofocus/timelapse
+	\item Kickstarted an image processing project for rapid detection of CFUs, facilitating usage in developing countries
+\end{compact}
 
 \section*{Leadership and Achievements}
-\vspace{-\baselineskip}
-\begin{multicols}{2}
-\begin{itemize}
-    \itemsep-.2em
-	\item Trinity College Basketball Captain, led 3 sessions a week, promoted to Division 1 by end of year% (2018-19)
-	\item First and Third Lower Boats' Captain, coached 100+ novices as a team of 7, fastest NW1 \& NW3% (2017-18)
-%    \item Climbed Mt Fuji! (2017)
-    \item 1st Men's Novice VIII, 9/9 race wins, fastest novice crew across 2700m for the first time in 33 years% (2016)
-	\item Composed for and led an orchestra, choir, small groups and soloists for a school competition, as a team of 3% (2016)
-    \vspace{-\baselineskip}
-    \vfill\null\columnbreak
-    \item School Symphony Orchestra, played as Concertmaster for Dvorak 9, Violin 2 leader for Beethoven 5% (2015-2016)
-    \item School Prefect \& House Vice-Captain, organised and participated in sports teams across all year groups% (2015-16)
-	\item Sat Round 2 of the British Mathematical Olympiad, invited to an Olympiad Training Camp at Oxford% (2014)
-	\item Represented the English National Junior Chess Squad on an international level in Gibraltar % (2012)
-	\vspace{-\baselineskip}
-\end{itemize}
-\end{multicols}
+\textbf{College Sports}
+\begin{compact}
+	\item Trinity College Basketball Captain: led 3 sessions/week, secured promotion to Division 1 (of 5)
+	\item 1st Men's Novice VIII: 9/9 race win record, first Fairbairn Cup victory in 33 years
+	\item Lower Boats' Captain: student-led program teaching rowing to 100+ novices, as a team of 7
+\end{compact}
+\vspace{.5\baselineskip}
+\textbf{School}
+\begin{compact}
+	\item Music competition: composed for and led an orchestra, choir, small groups and soloists, as a team of 3
+	\item School Symphony Orchestra: Concertmaster for Dvorak 9, Violin 2 leader for Beethoven 5
+	\item House Vice-Captain \& Prefect: organised and participated in sports teams across all year groups
+	\item Mathematical Olympiads: sat the BMO2 and attended an Olympiad Training Camp at Oxford
+	\item National Junior Chess Squad: represented England at the Gibraltar International Junior Chess Festival
+\end{compact}
 
 \section*{Projects and Skills}
-}
-\noindent
-\begin{changemargin}{.1cm}{0cm}
-\textbf{Feature Disentanglement and Balanced Representation Learning for Medical Machine Learning} \hfill \href{https://github.com/alfredclwong/ite-feature-selection}{\faGithub}
-    \begin{compact}
-        \vspace{-.2\baselineskip}
-        \item Masters diss focused on individualised healthcare and causal graph (counterfactual) inference
-        \item Performed feature selection for treatment effects with consideration for confounding biases
-        \item Involved GANs, actor-critic RL and representation learning, using Pandas/Keras in Python
-    \end{compact}
-\textbf{Tetris Implementations}
-\begin{compact}
-	\vspace{-.2\baselineskip}
-   \item C: drove a $96\times64\times16\mathrm{bit}$ colour display at 60fps with a KL03 ARM Cortex-M0 (2kB SRAM) \hfill \href{https://github.com/alfredclwong/4b25-tetris}{\faGithub}
-   \item OCaml: learning functional programming with the goal of developing a self-taught PvP AI \hfill \href{https://github.com/alfredclwong/tetris-ocaml}{\faGithub}
-\end{compact}
-\vspace{\baselineskip}
-Python $\cdot$ C/C++ $\cdot$ Java $\cdot$ JavaScript $\cdot$ React $\cdot$ HTML/CSS $\cdot$ OCaml $\cdot$ Git $\cdot$ CI/CD $\cdot$ Agile $\cdot$ Linux $\cdot$ Bash/Shell $\cdot$ \LaTeX $\cdot$ Basketball $\cdot$ Climbing $\cdot$ Rowing $\cdot$ Table Tennis  $\cdot$ Chess $\cdot$ Piano $\cdot$ Violin $\cdot$ Guitar $\cdot$ Black-Scholes $\cdot$ Quantum Mechanics $\cdot$ AWS $\cdot$ SQL $\cdot$ Keras/Tensorflow $\cdot$ Machine Learning $\cdot$ Computer Vision $\cdot$ Measure Theory $\cdot$ Computational Neuroscience
-\end{changemargin}
+\textbf{Medical machine learning}: Feature disentanglement and balanced representation learning \hfill \href{https://github.com/alfredclwong/ite-feature-selection}{\faGithub}\\
+\textbf{Tetris}: C ($96\times64\times16$bit colour display at 60fps on a Cortex-M0 with 2kB SRAM); OCaml \hfill \href{https://github.com/alfredclwong/4b25-tetris}{\faGithub} \href{https://github.com/alfredclwong/tetris-ocaml}{\faGithub}\\
+\textbf{Julia}: OpticSim.jl; interactive Hodgkin-Huxley model deployed on \href{http://pluto-demo.herokuapp.com/}{Heroku} \hfill \href{https://github.com/microsoft/OpticSim.jl}{\faGithub} \href{https://github.com/alfredclwong/pluto-demo}{\faGithub}\\
+
+% \begin{center}
+Python $\cdot$ C/C++ $\cdot$ Java $\cdot$ JavaScript $\cdot$ React $\cdot$ d3.js $\cdot$ HTML/CSS $\cdot$ Unity $\cdot$ C\# $\cdot$ OCaml $\cdot$ Linux $\cdot$ Bash/Shell\\
+Git $\cdot$ CI/CD (Github Actions) $\cdot$ AWS EC2 $\cdot$ SQL $\cdot$ Keras/Tensorflow $\cdot$ \LaTeX $\cdot$ Basketball $\cdot$ Rowing $\cdot$ Chess
+% \end{center}
 
 \end{document}
