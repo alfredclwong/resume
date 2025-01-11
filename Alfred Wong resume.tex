@@ -1,6 +1,7 @@
 \documentclass[letterpaper, 10pt]{article}
 \usepackage[top=0.8in, bottom=0.5in, left=0.9in, right=0.9in]{geometry}
 \usepackage{fontawesome}
+\usepackage{emoji}
 
 \usepackage{url}
 \urlstyle{same}
@@ -16,7 +17,8 @@
 \begin{document}
 \begin{center}
 	{\bfseries\huge Alfred Wong}\\
-	\vspace{-.5\baselineskip}\rule{\textwidth}{0.8pt}
+        \vspace{.5\baselineskip}
+        \small
 	\faMapMarker\ Bromley-by-Bow, London
 	\quad
 	\href{mailto:alfred.cl.wong@gmail.com}{{\small\faEnvelope}\ alfred.cl.wong@gmail.com}
@@ -24,27 +26,37 @@
 	\href{https://github.com/alfredclwong}{\faGithub\ alfredclwong}
 	\quad
 	\faPhone\ 07516 069 692
+	\vspace{-.5\baselineskip}\rule{\textwidth}{0.8pt}
+\end{center}
+
+\begin{center}    
+\textit{Excited about understanding brains, both digital \emoji{robot} and squishy \emoji{brain}}
 \end{center}
 
 \section*{Education}
 \textbf{University of Cambridge, Trinity College} \hfill BA MEng\\
-Part I Mathematics - Part II Engineering (1st) \hfill 2016 - 2020\vspace{.5\baselineskip}\\
-\textbf{Examinations}\\
-STEP II, III: S, 1 - A Level: 3A*, 2A - GCSE: 11A*, 2A - GRE: 170, 167, 4.5 - ACT: 35
+Part I Mathematics - Part II Engineering (1st) \hfill 2016 - 2020
 
 \section*{Experience}
+\textbf{AGIEN} \hfill {London}\\
+ML Research Engineer \hfill October 24 - Present
+\begin{compact}
+        \item {[NDA]} Conducting supervised fine-tuning experiments to augment a codegen pipeline
+        \item Gained experience in multiprocessing, multi-GPU SFT, creating big datasets, instruction prompting LMs
+\end{compact}
+\vspace{.5\baselineskip}
 \textbf{Optiver} \hfill Amsterdam\\
 Quantitative Trader \hfill Nov 22 - May 24
 \begin{compact}
-	\item Traded AEX/SX5E index options on the central profit-making desk, managing 1m+ vega spreads and dailies
-	\item Took responsibility for various research projects from the trading side, implementing HFT strategies which increased our market edge share by 33\%, and using event volatility pricing to put on cross-asset vol spreads
+	\item Traded AEX/SX5E index options on the central profit-making desk%, managing 1m+ vega spreads and dailies
+	\item Headed various research efforts from the trading side, using quantitative and statistical analyses to raise our market edge share for my spot by 33\% and predict cross-asset vol spreads
 \end{compact}
 \vspace{.5\baselineskip}
 \textbf{Centiva Capital} \hfill London\\
 Quantitative Research Intern \hfill Jun 22 - Sep 22
 \begin{compact}
 	\item Constructed a basket of FX signals for a systematic strategy, examining market intuitions and research
-	\item Covered the codebase end-to-end, from data cleaning to signal generation, model optimisation, and backtest
+	\item Covered the entire pipeline, from data cleaning to signal generation, statistical optimisation, and backtesting
 \end{compact}
 \vspace{.5\baselineskip}
 \textbf{Microsoft Research} \hfill Cambridge\\
@@ -55,19 +67,19 @@ Research Engineer \hfill Dec 20 - Nov 21
 	\item Ideated tesselation-based algorithms for designing multi-lens array VR/AR displays in 3-dimensional space
 \end{compact}
 \vspace{.5\baselineskip}
-\textbf{Goldman Sachs} \hfill London\\
-Summer Analyst \hfill Jun - Aug 19
-\begin{compact}
-	\item Sat with Client Services and Equities Structured Products Strats within the Securities division
-	\item Implemented a full-stack application to visualise distributed flows and worked on various Slang projects
-\end{compact}
-\vspace{.5\baselineskip}
+% \textbf{Goldman Sachs} \hfill London\\
+% Summer Analyst \hfill Jun - Aug 19
+% \begin{compact}
+% 	\item Sat with Client Services and Equities Structured Products Strats within the Securities division
+% 	\item Implemented a full-stack application to visualise distributed flows and worked on various Slang projects
+% \end{compact}
+% \vspace{.5\baselineskip}
 \textbf{PlayFusion} \hfill Cambridge\\
 Intern \hfill Jul - Sep 18
 \begin{compact}
-	\item Ran an independent project to study the viability of applying DL to train an AI for a video game
+	% \item Ran an independent project to study the viability of applying DL to train an AI for a video game
 	\item Replicated and adapted AlphaZero's asynchronous policy-value Monte Carlo tree search algorithm
-	\item Architected and deployed a scaling distributed cluster (EC2, TCP/IP) for training the policy-value network
+	\item Architected and deployed a scaling, distributed cluster on AWS EC2 for training the policy-value network
 \end{compact}
 % \vspace{.5\baselineskip}
 % \textbf{WaterScope} \hfill Cambridge\\
@@ -85,20 +97,20 @@ Intern \hfill Jul - Sep 18
 	\item Tetris: coded in C (for Cortex-M0 driving a colour display) and OCaml \hfill \href{https://github.com/alfredclwong/4b25-tetris}{\faGithub} \href{https://github.com/alfredclwong/tetris-ocaml}{\faGithub}
 \end{compact}
 \vspace{.5\baselineskip}
-\textbf{College Sports}
+\textbf{Sports}
 \begin{compact}
 	\item Trinity College Basketball Captain: led 3 sessions/week, secured promotion to Division 1 (of 5)
-	\item 1st Men's Novice VIII: 9/9 race win record, first Fairbairn Cup victory in 33 years
 	\item Lower Boats' Captain: student-led program teaching rowing to 100+ novices, as a team of 7
+	\item 1st Men's Novice VIII: 9/9 race win record, first Fairbairn Cup victory in 33 years
 \end{compact}
 \vspace{.5\baselineskip}
 \textbf{School}
 \begin{compact}
-	\item Music competition: composed for and led an orchestra, choir, small groups and soloists, as a team of 3
-	\item School Symphony Orchestra: Concertmaster for Dvorak 9, Violin 2 leader for Beethoven 5
-	\item House Vice-Captain \& Prefect: organised and participated in sports teams across all year groups
-	\item Mathematical Olympiads: sat the BMO2 and attended an Olympiad Training Camp at Oxford
 	\item National Junior Chess Squad: represented England at the Gibraltar International Junior Chess Festival
+	\item Mathematical Olympiads: sat the BMO2 and attended an Olympiad Training Camp at Oxford
+	\item Musical director: composed for and led an orchestra, choir, small groups and soloists, as a team of 3
+	\item School Symphony Orchestra: Concertmaster for Dvorak 9, Violin 2 leader for Beethoven 5
+	% \item House Vice-Captain \& Prefect: organised and participated in sports teams across all year groups
 \end{compact}
 
 % \begin{center}
